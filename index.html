@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Services Guide | Master Korean Apps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">K</div>
+                <span>K-Guide</span>
+            </div>
+            <nav class="nav-menu">
+                <a class="nav-item active" data-target="dashboard">🏠 Dashboard</a>
+                <a class="nav-item" data-target="setup">📱 Phone & ARC Setup</a>
+                <a class="nav-item" data-target="coupang">🚀 Coupang (쿠팡)</a>
+                <a class="nav-item" data-target="karrot">🥕 Karrot (당근마켓)</a>
+                <a class="nav-item" data-target="bunjang">⚡ Bunjang (번개장터)</a>
+                <a class="nav-item" data-target="ably">👗 A-bly (에이블리)</a>
+                <a class="nav-item" data-target="baemin">🛵 Baemin (배달의민족)</a>
+                <a class="nav-item" data-target="delivered">📦 Delivered Korea</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="theme-toggle" id="theme-toggle">☀️ Light Mode</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Dashboard -->
+            <section id="dashboard" class="content-section active">
+                <div class="section-header">
+                    <h2>Welcome to K-Guide</h2>
+                    <p>The ultimate English guide to surviving and thriving in Korea using local apps.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="feature-card" onclick="document.querySelector('[data-target=\'setup\']').click()">
+                        <div class="card-icon">📱</div>
+                        <h3>Phone & ARC</h3>
+                        <p>Get your Korean number and set up digital identity verification.</p>
+                    </div>
+                    <div class="feature-card" onclick="document.querySelector('[data-target=\'coupang\']').click()">
+                        <div class="card-icon">🚀</div>
+                        <h3>Coupang</h3>
+                        <p>Korea's Amazon. Next-day Rocket Delivery for groceries and essentials.</p>
+                    </div>
+                    <div class="feature-card" onclick="document.querySelector('[data-target=\'karrot\']').click()">
+                        <div class="card-icon">🥕</div>
+                        <h3>Karrot Market</h3>
+                        <p>Buy & sell used goods with verified neighbors in your local area.</p>
+                    </div>
+                    <div class="feature-card" onclick="document.querySelector('[data-target=\'bunjang\']').click()">
+                        <div class="card-icon">⚡</div>
+                        <h3>Bunjang</h3>
+                        <p>Nationwide second-hand trading with secure Bungae Pay.</p>
+                    </div>
+                    <div class="feature-card" onclick="document.querySelector('[data-target=\'ably\']').click()">
+                        <div class="card-icon">👗</div>
+                        <h3>A-bly</h3>
+                        <p>Trendy Korean fashion with massive discounts and coupons.</p>
+                    </div>
+                    <div class="feature-card" onclick="document.querySelector('[data-target=\'baemin\']').click()">
+                        <div class="card-icon">🛵</div>
+                        <h3>Baemin</h3>
+                        <p>Food delivery made easy. Use your foreign card securely.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phone & Setup -->
+            <section id="setup" class="content-section">
+                <div class="section-header">
+                    <h2>Korean Phone & ARC Setup</h2>
+                    <p>Before using any Korean app, you must get a Korean phone number and set up identity verification.</p>
+                </div>
+                <div class="guide-content">
+                    <div class="pro-tip">
+                        <strong>Strong Recommendation:</strong> Before using any apps, you must register a phone number under your name and get a debit card. Almost all apps require <strong>Identity Verification (본인인증)</strong> linked to your name and phone number to enable automatic payments.
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">1</span> What kind of SIM do you need?</h3>
+                        <p>Depending on your visa status and length of stay, your options differ:</p>
+                        <ul>
+                            <li><strong>Prepaid SIM (Passport):</strong> Good for short trips, valid up to 90 days. NO identity verification allowed.</li>
+                            <li><strong>Postpaid SIM (ARC):</strong> Requires Alien Registration Card (ARC) and a Korean bank account. Allows full identity verification for all apps.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image1.png" alt="Visa and ARC differences">
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">2</span> Identity Verification (본인인증) Apps</h3>
+                        <ul>
+                            <li>To verify your identity online, you will use apps like <strong>PASS</strong> or <strong>Toss</strong>. Install them first.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image2.jpeg" alt="Toss and PASS apps">
+                        </div>
+                        <ul>
+                            <li>Select your telecom provider (SKT, KT, LGU+, or MVNO/알뜰폰).</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image3.jpeg" alt="Telecom provider selection">
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">3</span> Enter Your Details</h3>
+                        <ul>
+                            <li>Enter your name <strong>EXACTLY</strong> as it appears on your ARC. If it is all caps, type all caps.</li>
+                            <li>Enter your phone number.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image4.jpeg" alt="Enter name and phone">
+                        </div>
+                        <ul>
+                            <li>Complete the security captcha or SMS verification.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image5.jpeg" alt="Security captcha">
+                            <img src="images/image6.jpeg" alt="Verification Success">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Karrot -->
+            <section id="karrot" class="content-section">
+                <div class="section-header">
+                    <h2>Karrot Market (당근마켓)</h2>
+                    <p>The #1 local community and second-hand marketplace in Korea.</p>
+                </div>
+                <div class="guide-content">
+                    <div class="pro-tip">
+                        <strong>Overview:</strong> Karrot connects you with locals within a 1-2km radius. You must authenticate your neighborhood to chat and trade.
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">1</span> Download and Start</h3>
+                        <ul>
+                            <li>Search for <strong>'당근마켓'</strong> or <strong>'Karrot'</strong> on the App Store or Play Store.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image10.png" alt="Karrot App Icon">
+                            <img src="images/image11.png" alt="Start Karrot">
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">2</span> Phone Verification</h3>
+                        <ul>
+                            <li>Karrot doesn't require SNS accounts; it only uses your phone number.</li>
+                            <li>Enter the 6-digit code sent via SMS.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image12.png" alt="Phone input">
+                            <img src="images/image13.png" alt="SMS Code">
+                        </div>
+                        <ul>
+                            <li><strong>Note:</strong> You can only have one account per phone number.</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">3</span> Neighborhood Authentication (동네인증)</h3>
+                        <ul>
+                            <li>This is the core feature. You <strong>MUST</strong> physically be in the neighborhood you select.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image14.png" alt="Neighborhood Auth 1">
+                            <img src="images/image15.png" alt="Neighborhood Auth 2">
+                        </div>
+                        <ul>
+                            <li>You must verify your location at least once every 30 days to keep trading.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image19.png" alt="Auth Warning">
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">4</span> Setting up your Profile</h3>
+                        <ul>
+                            <li>Choose a friendly nickname (e.g., 'Friendly Student') and upload a profile picture.</li>
+                            <li>A good profile builds trust (Manner Temperature / 매너온도).</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image16.jpeg" alt="Profile Setup">
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">5</span> How to Sell an Item</h3>
+                        <ul>
+                            <li>Click the <strong>'+'</strong> button at the bottom and select <strong>'Sell Item' (내 물건 팔기)</strong>.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image17.png" alt="Write Post">
+                            <img src="images/image18.png" alt="Sell Item Option">
+                        </div>
+                        <ul>
+                            <li>Upload clear photos, set a price, and write a detailed description.</li>
+                            <li>Be honest about any damages.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image20.png" alt="Item Details Input">
+                            <img src="images/image21.png" alt="Post Complete">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bunjang -->
+            <section id="bunjang" class="content-section">
+                <div class="section-header">
+                    <h2>Bunjang (번개장터)</h2>
+                    <p>Nationwide second-hand trading platform.</p>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-step">
+                        <h3><span class="step-num">1</span> Safe Payment (번개페이)</h3>
+                        <ul>
+                            <li>Bunjang allows nationwide shipping.</li>
+                            <li>Always use <strong>Bungae Pay (번개페이)</strong>.</li>
+                            <li>The seller will not receive the money until you receive the item and click 'Purchase Confirmed'. This prevents scams.</li>
+                        </ul>
+                    </div>
+                    <div class="guide-step">
+                        <h3><span class="step-num">2</span> Chat & Inquiries (번개톡)</h3>
+                        <ul>
+                            <li>Use the built-in chat (Bungae Talk) to ask the seller questions.</li>
+                            <li>If you are not fluent in Korean, it is perfectly fine to write your inquiries clearly in English.</li>
+                        </ul>
+                    </div>
+                    <div class="guide-step">
+                        <h3><span class="step-num">3</span> Points and Coupons</h3>
+                        <ul>
+                            <li>You can earn Bungae Points by completing daily missions or buying items.</li>
+                            <li>You can use these points like cash at checkout.</li>
+                            <li>Make sure to check the 'MY' tab for event coupons!</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Coupang -->
+            <section id="coupang" class="content-section">
+                <div class="section-header">
+                    <h2>Coupang (쿠팡)</h2>
+                    <p>Korea's Amazon with lightning-fast Rocket Delivery.</p>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-step">
+                        <h3><span class="step-num">1</span> Download the Coupang App</h3>
+                        <ul>
+                            <li>Coupang can be found on the Apple App Store or Google Play Store. It looks like this:</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image22.jpeg" alt="Coupang Icon">
+                            <img src="images/image23.png" alt="Coupang Store">
+                        </div>
+                    </div>
+                    
+                    <div class="guide-step">
+                        <h3><span class="step-num">2</span> Start Shopping & Rocket Delivery!</h3>
+                        <ul>
+                            <li>English search works great! I have purchased bedding, cleaning supplies, and more using English keywords.</li>
+                            <li>Look for the blue <strong>Rocket Delivery (로켓배송)</strong> icon—these items arrive within 1 day or less!</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image24.jpeg" alt="Coupang Start">
+                            <img src="images/image25.jpeg" alt="Coupang Item Search">
+                            <img src="images/image26.jpeg" alt="Coupang Item Details">
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">3</span> Address Input (Pro Tip)</h3>
+                        <ul>
+                            <li>If you don't know how to write Korean, type your home address in <strong>Papago</strong> and it will translate it for you!</li>
+                            <li>Most buildings have a front door password. Make sure to add the front door password into the delivery instructions so the driver can enter.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image27.jpeg" alt="Coupang Address Translation">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- A-bly -->
+            <section id="ably" class="content-section">
+                <div class="section-header">
+                    <h2>A-bly (에이블리) & ZIGZAG</h2>
+                    <p>Trendy fashion and beauty shopping platforms.</p>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-step">
+                        <h3><span class="step-num">1</span> Search & Cart</h3>
+                        <ul>
+                            <li>Search for items via keywords.</li>
+                            <li>Check the size, color, and reviews before adding them to your cart (장바구니).</li>
+                        </ul>
+                    </div>
+                    <div class="guide-step">
+                        <h3><span class="step-num">2</span> Registering Coupons</h3>
+                        <ul>
+                            <li>Go to 'MY Page' > 'Coupons' > 'Register Coupon' and enter event codes for huge discounts.</li>
+                            <li>Coupons have expiration dates, so use them quickly!</li>
+                        </ul>
+                    </div>
+                    <div class="guide-step">
+                        <h3><span class="step-num">3</span> Using Points</h3>
+                        <ul>
+                            <li>At checkout, you can use your accumulated points to cover up to <strong>50%</strong> of the total price!</li>
+                            <li>Points are earned by writing reviews (photo + text) after confirming your purchase.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Delivered Korea -->
+            <section id="delivered" class="content-section">
+                <div class="section-header">
+                    <h2>Delivered Korea</h2>
+                    <p>Your gateway to Korean Fashion worldwide (Shipping internationally).</p>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-step">
+                        <h3><span class="step-num">Option 1</span> We Buy, We Ship</h3>
+                        <ul>
+                            <li>Ideal for zero hassle.</li>
+                            <li>Browse ZIGZAG, copy the product URL, and paste it on Delivered Korea. Their personal shoppers buy it for you.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image28.jpeg" alt="ZIGZAG Item">
+                            <img src="images/image29.jpeg" alt="Copy URL">
+                            <img src="images/image30.jpeg" alt="Paste URL Delivered">
+                        </div>
+                        <ul>
+                            <li>When the items arrive at their warehouse, they will send you real photos and consolidate them for international shipping.</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">Option 2</span> You Buy, We Ship (Package Forwarding)</h3>
+                        <ul>
+                            <li>Full control.</li>
+                            <li>Sign up for a FREE Korean warehouse address provided by Delivered Korea.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image32.jpeg" alt="You Buy Diagram">
+                        </div>
+                        <ul>
+                            <li>Buy directly on ZIGZAG yourself, and set the shipping address to your free Korean warehouse address.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image33.jpeg" alt="ZIGZAG Address Input">
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">3</span> Smart Consolidation & Shipping</h3>
+                        <ul>
+                            <li>Waiting to combine 3-4 packages into one box can cut your international shipping cost per item significantly.</li>
+                            <li>Choose your international courier when you are ready!</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image31.jpeg" alt="Shipping Calculator">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Baemin -->
+            <section id="baemin" class="content-section">
+                <div class="section-header">
+                    <h2>Baemin (배달의민족)</h2>
+                    <p>Order food easily using your foreign credit card.</p>
+                </div>
+                <div class="guide-content">
+                    <div class="pro-tip">
+                        <strong>Review Events (리뷰이벤트):</strong> Many Baemin restaurants offer free items (drinks, cheese balls) if you promise to leave a 5-star photo review. Look for "리뷰 이벤트"!
+                    </div>
+                    <div class="guide-image-container">
+                        <img src="images/image34.jpeg" alt="Baemin Icon">
+                        <img src="images/image35.png" alt="Review Event Example">
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">1</span> Switch App to English</h3>
+                        <ul>
+                            <li>Baemin won't automatically switch to English.</li>
+                            <li>Go to your phone's <strong>System Settings</strong> > Find the <strong>Baemin app</strong> > Change the <strong>Language</strong> to English.</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-step">
+                        <h3><span class="step-num">2</span> The 3-Step Foreign Card Payment Process</h3>
+                        <ul>
+                            <li>You no longer need a Korean friend's card! Baemin now uses the NICEPAY gateway to process international cards smoothly.</li>
+                        </ul>
+                        
+                        <ul>
+                            <li><strong>Step 1:</strong> On the final order screen, scroll down to Payment Method (결제수단) > Select Other Payment Methods (기타 결제수단) > Tap <strong>[ Foreign Card ]</strong>.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image36.png" alt="Select Foreign Card">
+                        </div>
+
+                        <ul>
+                            <li><strong>Step 2:</strong> A NICEPAY pop-up will appear. Select from major global networks: Visa, MasterCard, JCB, or UnionPay.</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image37.png" alt="Select Card Brand">
+                        </div>
+
+                        <ul>
+                            <li><strong>Step 3:</strong> Type in your Credit Card Number, Expiry Date, Cardholder Name (exactly as written on the card), and Email. Click the big blue <strong>Pay</strong> button!</li>
+                        </ul>
+                        <div class="guide-image-container">
+                            <img src="images/image38.png" alt="Enter Card Details">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
